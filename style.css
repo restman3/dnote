@@ -38,3 +38,7 @@ th, td { text-align: left; border-bottom: 1px solid var(--line); padding: 8px 6p
 footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
 .en { margin-top: 48px; padding-top: 8px; border-top: 1px dashed var(--line); }
 @media (max-width: 520px) { .hero h1 { font-size: 32px; } nav { gap: 12px; } }
+.dl { text-decoration: none; color: inherit; transition: border-color 0.15s, transform 0.15s; }
+.dl:hover { border-color: var(--accent); transform: translateY(-1px); }
+.dl h3::after { content: " ↓"; color: var(--accent); }
+.small { font-size: 14px; margin: 6px 0; }
